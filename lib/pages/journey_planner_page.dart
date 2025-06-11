@@ -439,14 +439,16 @@ class _JourneyPlannerPageState extends State<JourneyPlannerPage> {
             const SizedBox(height: 16),
             ListTile(
               leading: const Icon(Icons.calendar_today),
-              title: Text(_selectedDate == null
-                  ? 'Today'
-                  : '${_selectedDate!.toLocal()}'.split(' ')[0]),
+              title: Text(
+                _selectedDate == null
+                    ? 'Today'
+                    : '${_selectedDate!.toLocal()}'.split(' ')[0]
+              ),
               trailing: TextButton(
                 onPressed: () {
                   setState(() {
-                    _selectedDate = DateTime.now();
-                    _selectedTime = TimeOfDay.now();
+                    _selectedDate = null; // Reset to "Today"
+                    _selectedTime = null; // Reset to "Now"
                   });
                   _saveLastUsed();
                 },
@@ -467,12 +469,16 @@ class _JourneyPlannerPageState extends State<JourneyPlannerPage> {
             ),
             ListTile(
               leading: const Icon(Icons.access_time),
-              title: Text(_selectedTime == null
-                  ? 'Now'
-                  : _selectedTime!.format(context)),
+              title: Text(
+                _selectedTime == null
+                    ? 'Now'
+                    : _selectedTime!.format(context)
+              ),
               trailing: TextButton(
                 onPressed: () {
-                  setState(() => _selectedTime = TimeOfDay.now());
+                  setState(() {
+                    _selectedTime = null; // Reset to "Now"
+                  });
                   _saveLastUsed();
                 },
                 child: const Text('Now'),
