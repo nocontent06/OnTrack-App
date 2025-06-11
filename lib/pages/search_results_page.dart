@@ -164,7 +164,7 @@ class _SearchResultsPageState extends State<SearchResultsPage> {
         final duration = arrTime.difference(depTime);
         final hours = duration.inHours;
         final minutes = duration.inMinutes % 60;
-        durationText = '${hours > 0 ? '$hours h ' : ''}${minutes} min';
+        durationText = '${hours > 0 ? '$hours h ' : ''}$minutes min';
       }
 
       // Changes (number of real legs minus 1)

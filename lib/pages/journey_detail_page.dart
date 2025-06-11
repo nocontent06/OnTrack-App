@@ -49,7 +49,6 @@ class JourneyDetailPage extends StatelessWidget {
 
     Widget buildLegCard(Map<String, dynamic> leg) {
       final isWalking = leg['walking'] == true;
-      final isPublic = leg['public'] != false;
       final line = leg['line'] as Map<String, dynamic>?;
 
       final depTime = formatTime(leg['departure']);

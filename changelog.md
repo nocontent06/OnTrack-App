@@ -3,3 +3,7 @@
 ### Build 1A1b
 
 - When "Now" is clicked, it shows "Now" for the time and "Today" for the date
+
+### Build 1A1c
+
+- Fixed some warnings

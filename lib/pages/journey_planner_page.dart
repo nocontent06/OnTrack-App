@@ -162,7 +162,6 @@ class _JourneyPlannerPageState extends State<JourneyPlannerPage> {
   }
 
   Future<void> _pickStation(TextEditingController controller, String label) async {
-    String search = '';
     List<Map<String, dynamic>> results = [];
     bool isLoading = false;
 
@@ -205,7 +204,7 @@ class _JourneyPlannerPageState extends State<JourneyPlannerPage> {
                           child: Container(
                             padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 4),
                             decoration: BoxDecoration(
-                              color: Colors.amber.withOpacity(0.08),
+                              color: Colors.amber.withAlpha((0.08 * 255).toInt()),
                               borderRadius: BorderRadius.circular(8),
                             ),
                             child: Row(
@@ -252,7 +251,6 @@ class _JourneyPlannerPageState extends State<JourneyPlannerPage> {
                       border: OutlineInputBorder(),
                     ),
                     onChanged: (val) async {
-                      search = val;
                       if (val.length > 2) {
                         setSheetState(() => isLoading = true);
                         results = await OebbApiService.searchStops(val);
@@ -585,134 +583,3 @@ class _JourneyPlannerPageState extends State<JourneyPlannerPage> {
   }
 }
 
-class _StationPickerContent extends StatelessWidget {
-  final bool showFavorites;
-  final Function(bool) onToggleFavorites;
-  final List<Map<String, dynamic>> results;
-  final bool isLoading;
-  final Function(String) onSearchChanged;
-  final Function(String, String) onFavoriteToggle;
-  final Function(Map<String, dynamic>) onStationSelected;
-
-  const _StationPickerContent({
-    Key? key,
-    required this.showFavorites,
-    required this.onToggleFavorites,
-    required this.results,
-    required this.isLoading,
-    required this.onSearchChanged,
-    required this.onFavoriteToggle,
-    required this.onStationSelected,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Padding(
-      padding: EdgeInsets.only(
-        bottom: MediaQuery.of(context).viewInsets.bottom,
-        left: 16,
-        right: 16,
-        top: 24,
-      ),
-      child: Column(
-        mainAxisSize: MainAxisSize.min,
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Text('Select Station', style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
-          const SizedBox(height: 12),
-          // Favorites section (always visible)
-          if (showFavorites)
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                InkWell(
-                  borderRadius: BorderRadius.circular(8),
-                  onTap: () => onToggleFavorites(!showFavorites),
-                  child: Container(
-                    padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 4),
-                    decoration: BoxDecoration(
-                      color: Colors.amber.withOpacity(0.08),
-                      borderRadius: BorderRadius.circular(8),
-                    ),
-                    child: Row(
-                      children: [
-                        Icon(
-                          showFavorites ? Icons.expand_less : Icons.expand_more,
-                          size: 22,
-                          color: Colors.amber[800],
-                        ),
-                        const SizedBox(width: 8),
-                        const Text(
-                          'Favorites',
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 16,
-                          ),
-                        ),
-                        const Spacer(),
-                        Text(
-                          showFavorites ? 'Hide' : 'Show',
-                          style: TextStyle(
-                            color: Colors.amber[800],
-                            fontWeight: FontWeight.w500,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-                if (showFavorites)
-                  ...results.map((id) => ListTile(
-                    leading: const Icon(Icons.star, color: Colors.amber),
-                    title: Text(id['name'] ?? id),
-                    onTap: () => onStationSelected(id),
-                  )),
-                const Divider(),
-              ],
-            ),
-          TextField(
-            autofocus: true,
-            decoration: const InputDecoration(
-              hintText: 'Search station...',
-              prefixIcon: Icon(Icons.search),
-              border: OutlineInputBorder(),
-            ),
-            onChanged: (val) => onSearchChanged(val),
-          ),
-          const SizedBox(height: 12),
-          if (isLoading)
-            const Padding(
-              padding: EdgeInsets.all(16),
-              child: CircularProgressIndicator(),
-            ),
-          if (!isLoading)
-            Flexible(
-              child: ListView.builder(
-                shrinkWrap: true,
-                itemCount: results.length,
-                itemBuilder: (context, i) {
-                  final station = results[i];
-                  final isFav = station['isFavorite'] == true;
-                  return ListTile(
-                    leading: const Icon(Icons.location_on),
-                    title: Text(station['name'] ?? ''),
-                    trailing: IconButton(
-                      icon: Icon(
-                        isFav ? Icons.star : Icons.star_border,
-                        color: isFav ? Colors.amber : Colors.grey,
-                      ),
-                      onPressed: () {
-                        onFavoriteToggle(station['id'], station['name']);
-                      },
-                    ),
-                    onTap: () => onStationSelected(station),
-                  );
-                },
-              ),
-            ),
-          const SizedBox(height: 12),
-        ],
-      ),
-    );
-  }
-}

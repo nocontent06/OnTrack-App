@@ -70,7 +70,7 @@ class _TrainDetailPageState extends State<TrainDetailPage> {
     final actual = DateTime.parse(actualArrival);
     final delay = actual.difference(planned).inMinutes;
     if (delay == 0) return null;
-    return delay > 0 ? "+${delay} min" : "${delay} min";
+    return delay > 0 ? "+$delay min" : "$delay min";
   }
 
   // Helper to get a color for the train line
@@ -166,7 +166,7 @@ class _TrainDetailPageState extends State<TrainDetailPage> {
                       height: 220,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(18),
-                        border: Border.all(color: Colors.teal.withOpacity(0.2)),
+                        border: Border.all(color: Colors.teal.withAlpha((0.2 * 255).toInt())),
                       ),
                       clipBehavior: Clip.antiAlias,
                       child: FlutterMap(
@@ -230,7 +230,7 @@ class _TrainDetailPageState extends State<TrainDetailPage> {
                         shrinkWrap: true,
                         physics: const NeverScrollableScrollPhysics(),
                         itemCount: stops.length,
-                        separatorBuilder: (_, __) => Divider(height: 1, color: Colors.grey[300]),
+                        separatorBuilder: (_, _) => Divider(height: 1, color: Colors.grey[300]),
                         itemBuilder: (context, i) {
                           final stop = stops[i];
                           final plannedArrival = stop['plannedArrival'];

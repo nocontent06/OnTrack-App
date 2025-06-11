@@ -7,9 +7,7 @@ class OebbApiService {
   // Search for stops
   static Future<List<Map<String, dynamic>>> searchStops(String query) async {
     final url = '$baseUrl/locations?query=$query';
-    print('Calling: $url');
     final response = await http.get(Uri.parse(url));
-    print('Response: ${response.body}');
     if (response.statusCode == 200) {
       final data = json.decode(response.body);
       if (data is List) {
@@ -36,9 +34,7 @@ class OebbApiService {
     if (departure != null) {
       url += '&departure=${Uri.encodeComponent(departure.toUtc().toIso8601String())}';
     }
-    print('Calling: $url');
     final response = await http.get(Uri.parse(url));
-    print('Response: ${response.body}');
     if (response.statusCode == 200) {
       final data = json.decode(response.body);
       if (data is List) {
@@ -56,7 +52,6 @@ class OebbApiService {
     final encodedTripId = Uri.encodeComponent(tripId);
     final url = Uri.parse('$baseUrl/trips/$encodedTripId?stopovers=true');
     final response = await http.get(url);
-    print('Stopovers response: ${response.statusCode} ${response.body}');
     if (response.statusCode == 200) {
       final data = jsonDecode(response.body);
       final stopovers = (data['trip']?['stopovers'] as List<dynamic>? ?? []);

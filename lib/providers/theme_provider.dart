@@ -21,7 +21,6 @@ class ThemeProvider extends ChangeNotifier {
       case AppThemeMode.oledDark:
         return ThemeMode.dark;
       case AppThemeMode.system:
-      default:
         return ThemeMode.system;
     }
   }
@@ -33,11 +32,12 @@ class ThemeProvider extends ChangeNotifier {
         scaffoldBackgroundColor: Colors.black,
         canvasColor: Colors.black,
         cardColor: Colors.black,
-        dialogBackgroundColor: Colors.black,
+        dialogTheme: const DialogThemeData(
+          backgroundColor: Colors.black,
+        ),
         colorScheme: ColorScheme.fromSeed(
           seedColor: Colors.teal,
           brightness: Brightness.dark,
-          background: Colors.black,
           surface: Colors.black,
         ),
         appBarTheme: const AppBarTheme(
@@ -47,7 +47,7 @@ class ThemeProvider extends ChangeNotifier {
         navigationBarTheme: NavigationBarThemeData(
           backgroundColor: Colors.black,
           indicatorColor: Colors.teal.shade700,
-          labelTextStyle: MaterialStateProperty.all(
+          labelTextStyle: WidgetStateProperty.all(
             const TextStyle(color: Colors.teal, fontWeight: FontWeight.bold),
           ),
         ),
