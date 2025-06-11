@@ -1,0 +1,30 @@
+name: ontrack
+description: A Train Connection App for planning trips and booking tickets.
+
+publish_to: 'none' 
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.7.2 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  provider: ^6.1.5
+  http: ^1.4.0
+  shared_preferences: ^2.5.3
+  flutter_map: ^8.1.1
+  latlong2: ^0.9.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  # assets:
+  #   - assets/images/
+  #   - assets/icons/
