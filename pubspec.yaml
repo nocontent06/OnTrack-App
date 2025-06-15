@@ -3,7 +3,7 @@ description: A Train Connection App for planning trips and booking tickets.
 
 publish_to: 'none' 
 
-version: 1.0.2+1A1c
+version: 1.1.0+1A2a
 
 environment:
   sdk: ">=3.7.2 <4.0.0"
@@ -19,6 +19,11 @@ dependencies:
   latlong2: ^0.9.1
   flutter_lints: ^6.0.0
   intl: ^0.20.2
+  country_flags: ^3.3.0
+  fl_chart: ^1.0.0
+  pdf: ^3.11.3
+  printing: ^5.14.2
+  share_plus: ^11.0.0
 
 dev_dependencies:
   flutter_test:
@@ -27,6 +32,7 @@ dev_dependencies:
 flutter:
   uses-material-design: true
 
-  # assets:
-  #   - assets/images/
+  assets:
+    - assets/gif/delete.gif
+    - assets/png/delete_1st.png
   #   - assets/icons/

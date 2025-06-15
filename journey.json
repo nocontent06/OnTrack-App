@@ -1,0 +1,1848 @@
+{
+	"earlierRef": "3|OB|MT#14#94102#94102#94421#94421#0#0#965#94079#1#0#922#0#0#-2147483648#1#2|PDH#88cc186b233fbd7c0964191de8039c2e|RD#13062025|RT#75907|US#1|RS#INIT",
+	"laterRef": "3|OF|MT#14#94156#94156#94472#94541#0#0#965#94103#3#0#922#0#0#-2147483648#1#2|PDH#88cc186b233fbd7c0964191de8039c2e|RD#13062025|RT#75907|US#1|RS#INIT",
+	"journeys": [
+		{
+			"type": "journey",
+			"legs": [
+				{
+					"origin": {
+						"type": "stop",
+						"id": "8100085",
+						"name": "Klagenfurt Hbf",
+						"location": {
+							"type": "location",
+							"id": "8100085",
+							"latitude": 46.615604,
+							"longitude": 14.313578
+						},
+						"products": {
+							"nationalExpress": true,
+							"national": true,
+							"interregional": true,
+							"regional": true,
+							"suburban": true,
+							"bus": false,
+							"ferry": false,
+							"subway": false,
+							"tram": false,
+							"onCall": false
+						}
+					},
+					"destination": {
+						"type": "stop",
+						"id": "8100092",
+						"name": "Spittal/Drau-Millstätter See Bahnhof",
+						"location": {
+							"type": "location",
+							"id": "8100092",
+							"latitude": 46.79573,
+							"longitude": 13.487541
+						},
+						"products": {
+							"nationalExpress": true,
+							"national": true,
+							"interregional": true,
+							"regional": true,
+							"suburban": true,
+							"bus": false,
+							"ferry": false,
+							"subway": false,
+							"tram": false,
+							"onCall": false
+						}
+					},
+					"departure": "2025-06-13T08:22:00+02:00",
+					"plannedDeparture": "2025-06-13T08:22:00+02:00",
+					"departureDelay": 0,
+					"arrival": "2025-06-13T09:12:00+02:00",
+					"plannedArrival": "2025-06-13T09:12:00+02:00",
+					"arrivalDelay": 0,
+					"reachable": true,
+					"tripId": "2|#VN#1#ST#1749723624#PI#0#ZI#580316#TA#0#DA#130625#1S#8100173#1T#519#LS#8100092#LT#912#PU#81#RT#1#CA#RJ#ZE#639#ZB#RJ 639  #PC#0#FR#8100173#FT#519#TO#8100092#TT#912#",
+					"line": {
+						"type": "line",
+						"id": "rj-639",
+						"fahrtNr": "639",
+						"name": "RJ 639",
+						"public": true,
+						"adminCode": "81____",
+						"productName": "RJ",
+						"mode": "train",
+						"product": "nationalExpress",
+						"operator": {
+							"type": "operator",
+							"id": "nahreisezug",
+							"name": "Nahreisezug"
+						}
+					},
+					"direction": "Spittal/Drau-Millstätter See Bahnhof",
+					"currentLocation": {
+						"type": "location",
+						"latitude": 46.780709,
+						"longitude": 14.474404
+					},
+					"arrivalPlatform": "2",
+					"plannedArrivalPlatform": "3",
+					"arrivalPrognosisType": "prognosed",
+					"departurePlatform": "1",
+					"plannedDeparturePlatform": "1",
+					"departurePrognosisType": "prognosed",
+					"remarks": [
+						{
+							"type": "hint",
+							"code": "RO",
+							"text": "space for wheelchairs"
+						},
+						{
+							"type": "hint",
+							"code": "OA",
+							"text": "Wheelchair space - For advance notification, call +43 5 1717"
+						},
+						{
+							"type": "hint",
+							"code": "EF",
+							"text": "Vehicle-mounted access ramp for wheelchair users"
+						},
+						{
+							"type": "hint",
+							"code": "OC",
+							"text": "WC accessible for wheelchair"
+						},
+						{
+							"type": "hint",
+							"code": "FR",
+							"text": "Bicycles conveyed - subject to reservation"
+						},
+						{
+							"type": "hint",
+							"code": "FK",
+							"text": "Number of bicycles conveyed limited"
+						},
+						{
+							"type": "hint",
+							"code": "UA",
+							"text": "business-compartment"
+						},
+						{
+							"type": "hint",
+							"code": "BR",
+							"text": "Bordrestaurant"
+						},
+						{
+							"type": "hint",
+							"code": "HD",
+							"text": "Quiet Zone"
+						},
+						{
+							"type": "hint",
+							"code": "KN",
+							"text": "Family Zone"
+						},
+						{
+							"type": "hint",
+							"code": "WV",
+							"text": "Wifi available"
+						}
+					]
+				},
+				{
+					"origin": {
+						"type": "stop",
+						"id": "8100092",
+						"name": "Spittal/Drau-Millstätter See Bahnhof",
+						"location": {
+							"type": "location",
+							"id": "8100092",
+							"latitude": 46.79573,
+							"longitude": 13.487541
+						},
+						"products": {
+							"nationalExpress": true,
+							"national": true,
+							"interregional": true,
+							"regional": true,
+							"suburban": true,
+							"bus": false,
+							"ferry": false,
+							"subway": false,
+							"tram": false,
+							"onCall": false
+						}
+					},
+					"destination": {
+						"type": "stop",
+						"id": "296131",
+						"name": "Spittal/Drau-Millstätter See Bahnhof (Busbahnhof)",
+						"location": {
+							"type": "location",
+							"id": "296131",
+							"latitude": 46.795119,
+							"longitude": 13.488746
+						},
+						"products": {
+							"nationalExpress": false,
+							"national": true,
+							"interregional": false,
+							"regional": false,
+							"suburban": false,
+							"bus": true,
+							"ferry": false,
+							"subway": false,
+							"tram": false,
+							"onCall": false
+						}
+					},
+					"departure": "2025-06-13T09:12:00+02:00",
+					"plannedDeparture": "2025-06-13T09:12:00+02:00",
+					"departureDelay": null,
+					"arrival": "2025-06-13T09:15:00+02:00",
+					"plannedArrival": "2025-06-13T09:15:00+02:00",
+					"arrivalDelay": null,
+					"public": true,
+					"walking": true,
+					"distance": 114
+				},
+				{
+					"origin": {
+						"type": "stop",
+						"id": "296131",
+						"name": "Spittal/Drau-Millstätter See Bahnhof (Busbahnhof)",
+						"location": {
+							"type": "location",
+							"id": "296131",
+							"latitude": 46.795119,
+							"longitude": 13.488746
+						},
+						"products": {
+							"nationalExpress": false,
+							"national": true,
+							"interregional": false,
+							"regional": false,
+							"suburban": false,
+							"bus": true,
+							"ferry": false,
+							"subway": false,
+							"tram": false,
+							"onCall": false
+						}
+					},
+					"destination": {
+						"type": "stop",
+						"id": "594451",
+						"name": "Bischofshofen Bahnhof (Vorplatz)",
+						"location": {
+							"type": "location",
+							"id": "594451",
+							"latitude": 47.41702,
+							"longitude": 13.219456
+						},
+						"products": {
+							"nationalExpress": false,
+							"national": true,
+							"interregional": false,
+							"regional": false,
+							"suburban": false,
+							"bus": true,
+							"ferry": false,
+							"subway": false,
+							"tram": false,
+							"onCall": true
+						}
+					},
+					"departure": "2025-06-13T09:20:00+02:00",
+					"plannedDeparture": "2025-06-13T09:20:00+02:00",
+					"departureDelay": null,
+					"arrival": "2025-06-13T10:40:00+02:00",
+					"plannedArrival": "2025-06-13T10:40:00+02:00",
+					"arrivalDelay": null,
+					"reachable": true,
+					"tripId": "2|#VN#1#ST#1749723624#PI#0#ZI#581996#TA#4#DA#130625#1S#296131#1T#920#LS#594451#LT#1040#PU#81#RT#1#CA#Bsv#ZE#SV220#ZB#BusSV220#PC#1#FR#296131#FT#920#TO#594451#TT#1040#",
+					"line": {
+						"type": "line",
+						"id": "bussv220",
+						"fahrtNr": "1124",
+						"name": "BusSV220",
+						"public": true,
+						"adminCode": "19POSD",
+						"productName": "Bus",
+						"mode": "train",
+						"product": "national",
+						"operator": {
+							"type": "operator",
+							"id": "osterreichische-postbus-aktiengesellschaft",
+							"name": "Österreichische Postbus Aktiengesellschaft"
+						}
+					},
+					"direction": "Bischofshofen Bahnhof (Vorplatz)",
+					"arrivalPlatform": null,
+					"plannedArrivalPlatform": null,
+					"arrivalPrognosisType": "prognosed",
+					"departurePlatform": "1",
+					"plannedDeparturePlatform": "1",
+					"departurePrognosisType": "prognosed",
+					"remarks": [
+						{
+							"type": "hint",
+							"code": "iD",
+							"text": "Hinweis: Ticket bitte vor Fahrtantritt online bzw. mobil, beim Ticketautomaten oder -schalter erwerben"
+						},
+						{
+							"type": "hint",
+							"code": "RO",
+							"text": "space for wheelchairs"
+						},
+						{
+							"type": "hint",
+							"code": "FK",
+							"text": "Number of bicycles conveyed limited"
+						},
+						{
+							"type": "hint",
+							"code": "K2",
+							"text": "2nd class only"
+						},
+						{
+							"type": "hint",
+							"code": "k9",
+							"text": "Hinweis: Ticketverkauf im Bus nur eingeschränkt möglich"
+						},
+						{
+							"type": "hint",
+							"code": "SV",
+							"text": "Train replacement bus"
+						}
+					],
+					"cycle": {
+						"min": 3600,
+						"max": 3600,
+						"nr": 3
+					}
+				},
+				{
+					"origin": {
+						"type": "stop",
+						"id": "594451",
+						"name": "Bischofshofen Bahnhof (Vorplatz)",
+						"location": {
+							"type": "location",
+							"id": "594451",
+							"latitude": 47.41702,
+							"longitude": 13.219456
+						},
+						"products": {
+							"nationalExpress": false,
+							"national": true,
+							"interregional": false,
+							"regional": false,
+							"suburban": false,
+							"bus": true,
+							"ferry": false,
+							"subway": false,
+							"tram": false,
+							"onCall": true
+						}
+					},
+					"destination": {
+						"type": "stop",
+						"id": "8100042",
+						"name": "Bischofshofen Bahnhof",
+						"location": {
+							"type": "location",
+							"id": "8100042",
+							"latitude": 47.417874,
+							"longitude": 13.220058
+						},
+						"products": {
+							"nationalExpress": true,
+							"national": true,
+							"interregional": true,
+							"regional": true,
+							"suburban": true,
+							"bus": false,
+							"ferry": false,
+							"subway": false,
+							"tram": false,
+							"onCall": false
+						}
+					},
+					"departure": "2025-06-13T10:40:00+02:00",
+					"plannedDeparture": "2025-06-13T10:40:00+02:00",
+					"departureDelay": null,
+					"arrival": "2025-06-13T10:45:00+02:00",
+					"plannedArrival": "2025-06-13T10:45:00+02:00",
+					"arrivalDelay": null,
+					"public": true,
+					"walking": true,
+					"distance": 105
+				},
+				{
+					"origin": {
+						"type": "stop",
+						"id": "8100042",
+						"name": "Bischofshofen Bahnhof",
+						"location": {
+							"type": "location",
+							"id": "8100042",
+							"latitude": 47.417874,
+							"longitude": 13.220058
+						},
+						"products": {
+							"nationalExpress": true,
+							"national": true,
+							"interregional": true,
+							"regional": true,
+							"suburban": true,
+							"bus": false,
+							"ferry": false,
+							"subway": false,
+							"tram": false,
+							"onCall": false
+						}
+					},
+					"destination": {
+						"type": "stop",
+						"id": "8000261",
+						"name": "München Hbf",
+						"location": {
+							"type": "location",
+							"id": "8000261",
+							"latitude": 48.140229,
+							"longitude": 11.558339
+						},
+						"products": {
+							"nationalExpress": true,
+							"national": true,
+							"interregional": true,
+							"regional": true,
+							"suburban": true,
+							"bus": false,
+							"ferry": false,
+							"subway": false,
+							"tram": false,
+							"onCall": false
+						}
+					},
+					"departure": "2025-06-13T11:08:00+02:00",
+					"plannedDeparture": "2025-06-13T11:08:00+02:00",
+					"departureDelay": null,
+					"arrival": "2025-06-13T13:41:00+02:00",
+					"plannedArrival": "2025-06-13T13:41:00+02:00",
+					"arrivalDelay": null,
+					"reachable": true,
+					"tripId": "2|#VN#1#ST#1749723624#PI#0#ZI#555585#TA#0#DA#130625#1S#8100044#1T#1052#LS#8000080#LT#2057#PU#81#RT#1#CA#ICE#ZE#114#ZB#ICE 114 #PC#0#FR#8100044#FT#1052#TO#8000080#TT#2057#",
+					"line": {
+						"type": "line",
+						"id": "ice-114",
+						"fahrtNr": "114",
+						"name": "ICE 114",
+						"public": true,
+						"adminCode": "81____",
+						"productName": "ICE",
+						"mode": "train",
+						"product": "nationalExpress",
+						"operator": {
+							"type": "operator",
+							"id": "nahreisezug",
+							"name": "Nahreisezug"
+						}
+					},
+					"direction": "Dortmund Hbf",
+					"arrivalPlatform": "14",
+					"plannedArrivalPlatform": "14",
+					"arrivalPrognosisType": "prognosed",
+					"departurePlatform": "3",
+					"plannedDeparturePlatform": "3",
+					"departurePrognosisType": "prognosed",
+					"remarks": [
+						{
+							"type": "hint",
+							"code": "RO",
+							"text": "space for wheelchairs"
+						},
+						{
+							"type": "hint",
+							"code": "OA",
+							"text": "Wheelchair space - For advance notification, call +43 5 1717"
+						},
+						{
+							"type": "hint",
+							"code": "EF",
+							"text": "Vehicle-mounted access ramp for wheelchair users"
+						},
+						{
+							"type": "hint",
+							"code": "OC",
+							"text": "WC accessible for wheelchair"
+						},
+						{
+							"type": "hint",
+							"code": "CK",
+							"text": "Komfort Check-in possible (visit bahn.de/kci for more information) (Salzburg Hbf - München Hbf)"
+						},
+						{
+							"type": "hint",
+							"code": "FR",
+							"text": "Bicycles conveyed - subject to reservation"
+						},
+						{
+							"type": "hint",
+							"code": "FK",
+							"text": "Number of bicycles conveyed limited"
+						},
+						{
+							"type": "hint",
+							"code": "BR",
+							"text": "Bordrestaurant"
+						},
+						{
+							"type": "hint",
+							"code": "HD",
+							"text": "Quiet Zone"
+						},
+						{
+							"type": "hint",
+							"code": "KK",
+							"text": "parent-and-children compartment"
+						},
+						{
+							"type": "hint",
+							"code": "WV",
+							"text": "Wifi available"
+						},
+						{
+							"type": "hint",
+							"code": "ZN",
+							"text": "Wörthersee"
+						},
+						{
+							"id": "782348",
+							"type": "warning",
+							"summary": "Update 1 (18.03.2025 08:40) Border control at the German corner",
+							"text": "The German Federal Police carry out entry checks at the German corner. Please have your passport or identity card ready. This may result in additional delays.\n",
+							"icon": {
+								"type": "HIM4",
+								"title": null
+							},
+							"priority": 100,
+							"products": {
+								"nationalExpress": true,
+								"national": true,
+								"interregional": false,
+								"regional": false,
+								"suburban": false,
+								"bus": false,
+								"ferry": false,
+								"subway": false,
+								"tram": false,
+								"onCall": false
+							},
+							"company": "VL KI HIM ADHOC",
+							"categories": [
+								4
+							],
+							"edges": [
+								{
+									"icoCrd": {
+										"x": 13045947,
+										"y": 47814254
+									},
+									"icon": null,
+									"fromLocation": null,
+									"toLocation": null
+								}
+							],
+							"validFrom": "2025-03-16T00:00:00+01:00",
+							"validUntil": "2025-09-15T23:59:00+02:00",
+							"modified": "2025-03-18T08:40:34+01:00"
+						}
+					]
+				}
+			],
+			"refreshToken": "¶HKI¶T$A=1@O=Klagenfurt Hbf@L=8100085@a=128@$A=1@O=Spittal/Drau-Millstätter See Bahnhof@L=8100092@a=128@$202506130822$202506130912$RJ 639  $$1$$$$$$§W$A=1@O=Spittal/Drau-Millstätter See Bahnhof@L=8100092@a=128@$A=1@O=Spittal/Drau-Millstätter See Bahnhof (Busbahnhof)@L=296131@a=128@$202506130912$202506130915$$$1$$$$$$§T$A=1@O=Spittal/Drau-Millstätter See Bahnhof (Busbahnhof)@L=296131@a=128@$A=1@O=Bischofshofen Bahnhof (Vorplatz)@L=594451@a=128@$202506130920$202506131040$BusSV220$$1$$$$$$§W$A=1@O=Bischofshofen Bahnhof (Vorplatz)@L=594451@a=128@$A=1@O=Bischofshofen Bahnhof@L=8100042@a=128@$202506131040$202506131045$$$1$$$$$$§T$A=1@O=Bischofshofen Bahnhof@L=8100042@a=128@$A=1@O=München Hbf@L=8000261@a=128@$202506131108$202506131341$ICE 114 $$1$$$$$$¶KRCC¶#VE#1#MRTF#",
+			"cycle": {
+				"min": 3600
+			}
+		},
+		{
+			"type": "journey",
+			"legs": [
+				{
+					"origin": {
+						"type": "stop",
+						"id": "8100085",
+						"name": "Klagenfurt Hbf",
+						"location": {
+							"type": "location",
+							"id": "8100085",
+							"latitude": 46.615604,
+							"longitude": 14.313578
+						},
+						"products": {
+							"nationalExpress": true,
+							"national": true,
+							"interregional": true,
+							"regional": true,
+							"suburban": true,
+							"bus": false,
+							"ferry": false,
+							"subway": false,
+							"tram": false,
+							"onCall": false
+						}
+					},
+					"destination": {
+						"type": "stop",
+						"id": "8100092",
+						"name": "Spittal/Drau-Millstätter See Bahnhof",
+						"location": {
+							"type": "location",
+							"id": "8100092",
+							"latitude": 46.79573,
+							"longitude": 13.487541
+						},
+						"products": {
+							"nationalExpress": true,
+							"national": true,
+							"interregional": true,
+							"regional": true,
+							"suburban": true,
+							"bus": false,
+							"ferry": false,
+							"subway": false,
+							"tram": false,
+							"onCall": false
+						}
+					},
+					"departure": "2025-06-13T09:16:00+02:00",
+					"plannedDeparture": "2025-06-13T09:16:00+02:00",
+					"departureDelay": 0,
+					"arrival": "2025-06-13T10:12:00+02:00",
+					"plannedArrival": "2025-06-13T10:12:00+02:00",
+					"arrivalDelay": 0,
+					"reachable": true,
+					"tripId": "2|#VN#1#ST#1749723624#PI#0#ZI#580927#TA#2#DA#130625#1S#8100085#1T#916#LS#8100093#LT#1042#PU#81#RT#1#CA#IC#ZE#775#ZB#IC 775  #PC#2#FR#8100085#FT#916#TO#8100093#TT#1042#",
+					"line": {
+						"type": "line",
+						"id": "ic-775",
+						"fahrtNr": "775",
+						"name": "IC 775",
+						"public": true,
+						"adminCode": "81____",
+						"productName": "IC",
+						"mode": "train",
+						"product": "national",
+						"operator": {
+							"type": "operator",
+							"id": "nahreisezug",
+							"name": "Nahreisezug"
+						}
+					},
+					"direction": "Mallnitz-Obervellach Bahnhof",
+					"arrivalPlatform": "3",
+					"plannedArrivalPlatform": "3",
+					"arrivalPrognosisType": "prognosed",
+					"departurePlatform": "3",
+					"plannedDeparturePlatform": "3",
+					"departurePrognosisType": "prognosed",
+					"remarks": [
+						{
+							"type": "hint",
+							"code": "RO",
+							"text": "space for wheelchairs"
+						},
+						{
+							"type": "hint",
+							"code": "OA",
+							"text": "Wheelchair space - For advance notification, call +43 5 1717"
+						},
+						{
+							"type": "hint",
+							"code": "FR",
+							"text": "Bicycles conveyed - subject to reservation"
+						},
+						{
+							"type": "hint",
+							"code": "FK",
+							"text": "Number of bicycles conveyed limited"
+						},
+						{
+							"type": "hint",
+							"code": "BO",
+							"text": "mobile on-board service (snacks and beverages)"
+						}
+					]
+				},
+				{
+					"origin": {
+						"type": "stop",
+						"id": "8100092",
+						"name": "Spittal/Drau-Millstätter See Bahnhof",
+						"location": {
+							"type": "location",
+							"id": "8100092",
+							"latitude": 46.79573,
+							"longitude": 13.487541
+						},
+						"products": {
+							"nationalExpress": true,
+							"national": true,
+							"interregional": true,
+							"regional": true,
+							"suburban": true,
+							"bus": false,
+							"ferry": false,
+							"subway": false,
+							"tram": false,
+							"onCall": false
+						}
+					},
+					"destination": {
+						"type": "stop",
+						"id": "296131",
+						"name": "Spittal/Drau-Millstätter See Bahnhof (Busbahnhof)",
+						"location": {
+							"type": "location",
+							"id": "296131",
+							"latitude": 46.795119,
+							"longitude": 13.488746
+						},
+						"products": {
+							"nationalExpress": false,
+							"national": true,
+							"interregional": false,
+							"regional": false,
+							"suburban": false,
+							"bus": true,
+							"ferry": false,
+							"subway": false,
+							"tram": false,
+							"onCall": false
+						}
+					},
+					"departure": "2025-06-13T10:12:00+02:00",
+					"plannedDeparture": "2025-06-13T10:12:00+02:00",
+					"departureDelay": null,
+					"arrival": "2025-06-13T10:15:00+02:00",
+					"plannedArrival": "2025-06-13T10:15:00+02:00",
+					"arrivalDelay": null,
+					"public": true,
+					"walking": true,
+					"distance": 114
+				},
+				{
+					"origin": {
+						"type": "stop",
+						"id": "296131",
+						"name": "Spittal/Drau-Millstätter See Bahnhof (Busbahnhof)",
+						"location": {
+							"type": "location",
+							"id": "296131",
+							"latitude": 46.795119,
+							"longitude": 13.488746
+						},
+						"products": {
+							"nationalExpress": false,
+							"national": true,
+							"interregional": false,
+							"regional": false,
+							"suburban": false,
+							"bus": true,
+							"ferry": false,
+							"subway": false,
+							"tram": false,
+							"onCall": false
+						}
+					},
+					"destination": {
+						"type": "stop",
+						"id": "594451",
+						"name": "Bischofshofen Bahnhof (Vorplatz)",
+						"location": {
+							"type": "location",
+							"id": "594451",
+							"latitude": 47.41702,
+							"longitude": 13.219456
+						},
+						"products": {
+							"nationalExpress": false,
+							"national": true,
+							"interregional": false,
+							"regional": false,
+							"suburban": false,
+							"bus": true,
+							"ferry": false,
+							"subway": false,
+							"tram": false,
+							"onCall": true
+						}
+					},
+					"departure": "2025-06-13T10:20:00+02:00",
+					"plannedDeparture": "2025-06-13T10:20:00+02:00",
+					"departureDelay": null,
+					"arrival": "2025-06-13T11:40:00+02:00",
+					"plannedArrival": "2025-06-13T11:40:00+02:00",
+					"arrivalDelay": null,
+					"reachable": true,
+					"tripId": "2|#VN#1#ST#1749723624#PI#0#ZI#581996#TA#5#DA#130625#1S#296131#1T#1020#LS#594451#LT#1140#PU#81#RT#1#CA#Bsv#ZE#SV220#ZB#BusSV220#PC#1#FR#296131#FT#1020#TO#594451#TT#1140#",
+					"line": {
+						"type": "line",
+						"id": "bussv220",
+						"fahrtNr": "1125",
+						"name": "BusSV220",
+						"public": true,
+						"adminCode": "19POSD",
+						"productName": "Bus",
+						"mode": "train",
+						"product": "national",
+						"operator": {
+							"type": "operator",
+							"id": "osterreichische-postbus-aktiengesellschaft",
+							"name": "Österreichische Postbus Aktiengesellschaft"
+						}
+					},
+					"direction": "Bischofshofen Bahnhof (Vorplatz)",
+					"arrivalPlatform": null,
+					"plannedArrivalPlatform": null,
+					"arrivalPrognosisType": "prognosed",
+					"departurePlatform": "1",
+					"plannedDeparturePlatform": "1",
+					"departurePrognosisType": "prognosed",
+					"remarks": [
+						{
+							"type": "hint",
+							"code": "iD",
+							"text": "Hinweis: Ticket bitte vor Fahrtantritt online bzw. mobil, beim Ticketautomaten oder -schalter erwerben"
+						},
+						{
+							"type": "hint",
+							"code": "RO",
+							"text": "space for wheelchairs"
+						},
+						{
+							"type": "hint",
+							"code": "FK",
+							"text": "Number of bicycles conveyed limited"
+						},
+						{
+							"type": "hint",
+							"code": "K2",
+							"text": "2nd class only"
+						},
+						{
+							"type": "hint",
+							"code": "k9",
+							"text": "Hinweis: Ticketverkauf im Bus nur eingeschränkt möglich"
+						},
+						{
+							"type": "hint",
+							"code": "SV",
+							"text": "Train replacement bus"
+						}
+					],
+					"cycle": {
+						"min": 3600,
+						"max": 3600,
+						"nr": 3
+					}
+				},
+				{
+					"origin": {
+						"type": "stop",
+						"id": "594451",
+						"name": "Bischofshofen Bahnhof (Vorplatz)",
+						"location": {
+							"type": "location",
+							"id": "594451",
+							"latitude": 47.41702,
+							"longitude": 13.219456
+						},
+						"products": {
+							"nationalExpress": false,
+							"national": true,
+							"interregional": false,
+							"regional": false,
+							"suburban": false,
+							"bus": true,
+							"ferry": false,
+							"subway": false,
+							"tram": false,
+							"onCall": true
+						}
+					},
+					"destination": {
+						"type": "stop",
+						"id": "8100042",
+						"name": "Bischofshofen Bahnhof",
+						"location": {
+							"type": "location",
+							"id": "8100042",
+							"latitude": 47.417874,
+							"longitude": 13.220058
+						},
+						"products": {
+							"nationalExpress": true,
+							"national": true,
+							"interregional": true,
+							"regional": true,
+							"suburban": true,
+							"bus": false,
+							"ferry": false,
+							"subway": false,
+							"tram": false,
+							"onCall": false
+						}
+					},
+					"departure": "2025-06-13T11:40:00+02:00",
+					"plannedDeparture": "2025-06-13T11:40:00+02:00",
+					"departureDelay": null,
+					"arrival": "2025-06-13T11:45:00+02:00",
+					"plannedArrival": "2025-06-13T11:45:00+02:00",
+					"arrivalDelay": null,
+					"public": true,
+					"walking": true,
+					"distance": 105
+				},
+				{
+					"origin": {
+						"type": "stop",
+						"id": "8100042",
+						"name": "Bischofshofen Bahnhof",
+						"location": {
+							"type": "location",
+							"id": "8100042",
+							"latitude": 47.417874,
+							"longitude": 13.220058
+						},
+						"products": {
+							"nationalExpress": true,
+							"national": true,
+							"interregional": true,
+							"regional": true,
+							"suburban": true,
+							"bus": false,
+							"ferry": false,
+							"subway": false,
+							"tram": false,
+							"onCall": false
+						}
+					},
+					"destination": {
+						"type": "stop",
+						"id": "8100002",
+						"name": "Salzburg Hbf",
+						"location": {
+							"type": "location",
+							"id": "8100002",
+							"latitude": 47.813057,
+							"longitude": 13.045856
+						},
+						"products": {
+							"nationalExpress": true,
+							"national": true,
+							"interregional": true,
+							"regional": true,
+							"suburban": true,
+							"bus": false,
+							"ferry": false,
+							"subway": false,
+							"tram": false,
+							"onCall": false
+						}
+					},
+					"departure": "2025-06-13T11:57:00+02:00",
+					"plannedDeparture": "2025-06-13T11:57:00+02:00",
+					"departureDelay": null,
+					"arrival": "2025-06-13T12:44:00+02:00",
+					"plannedArrival": "2025-06-13T12:44:00+02:00",
+					"arrivalDelay": null,
+					"reachable": true,
+					"tripId": "2|#VN#1#ST#1749723624#PI#0#ZI#580626#TA#0#DA#130625#1S#8100044#1T#1141#LS#8100002#LT#1244#PU#81#RT#1#CA#RJ#ZE#697#ZB#RJ 697  #PC#0#FR#8100044#FT#1141#TO#8100002#TT#1244#",
+					"line": {
+						"type": "line",
+						"id": "rj-697",
+						"fahrtNr": "697",
+						"name": "RJ 697",
+						"public": true,
+						"adminCode": "81____",
+						"productName": "RJ",
+						"mode": "train",
+						"product": "nationalExpress",
+						"operator": {
+							"type": "operator",
+							"id": "nahreisezug",
+							"name": "Nahreisezug"
+						}
+					},
+					"direction": "Salzburg Hbf",
+					"arrivalPlatform": "5A-B",
+					"plannedArrivalPlatform": "5A-B",
+					"arrivalPrognosisType": "prognosed",
+					"departurePlatform": "3",
+					"plannedDeparturePlatform": "3",
+					"departurePrognosisType": "prognosed",
+					"remarks": [
+						{
+							"type": "hint",
+							"code": "RO",
+							"text": "space for wheelchairs"
+						},
+						{
+							"type": "hint",
+							"code": "OA",
+							"text": "Wheelchair space - For advance notification, call +43 5 1717"
+						},
+						{
+							"type": "hint",
+							"code": "EF",
+							"text": "Vehicle-mounted access ramp for wheelchair users"
+						},
+						{
+							"type": "hint",
+							"code": "OC",
+							"text": "WC accessible for wheelchair"
+						},
+						{
+							"type": "hint",
+							"code": "FR",
+							"text": "Bicycles conveyed - subject to reservation"
+						},
+						{
+							"type": "hint",
+							"code": "FK",
+							"text": "Number of bicycles conveyed limited"
+						},
+						{
+							"type": "hint",
+							"code": "UA",
+							"text": "business-compartment"
+						},
+						{
+							"type": "hint",
+							"code": "BR",
+							"text": "Bordrestaurant"
+						},
+						{
+							"type": "hint",
+							"code": "HD",
+							"text": "Quiet Zone"
+						},
+						{
+							"type": "hint",
+							"code": "KN",
+							"text": "Family Zone"
+						},
+						{
+							"type": "hint",
+							"code": "WV",
+							"text": "Wifi available"
+						}
+					]
+				},
+				{
+					"origin": {
+						"type": "stop",
+						"id": "8100002",
+						"name": "Salzburg Hbf",
+						"location": {
+							"type": "location",
+							"id": "8100002",
+							"latitude": 47.813057,
+							"longitude": 13.045856
+						},
+						"products": {
+							"nationalExpress": true,
+							"national": true,
+							"interregional": true,
+							"regional": true,
+							"suburban": true,
+							"bus": false,
+							"ferry": false,
+							"subway": false,
+							"tram": false,
+							"onCall": false
+						}
+					},
+					"destination": {
+						"type": "stop",
+						"id": "8100002",
+						"name": "Salzburg Hbf",
+						"location": {
+							"type": "location",
+							"id": "8100002",
+							"latitude": 47.813057,
+							"longitude": 13.045856
+						},
+						"products": {
+							"nationalExpress": true,
+							"national": true,
+							"interregional": true,
+							"regional": true,
+							"suburban": true,
+							"bus": false,
+							"ferry": false,
+							"subway": false,
+							"tram": false,
+							"onCall": false
+						}
+					},
+					"departure": "2025-06-13T12:44:00+02:00",
+					"plannedDeparture": "2025-06-13T12:44:00+02:00",
+					"departureDelay": null,
+					"arrival": "2025-06-13T12:44:00+02:00",
+					"plannedArrival": "2025-06-13T12:44:00+02:00",
+					"arrivalDelay": null,
+					"public": true,
+					"walking": true,
+					"distance": null
+				},
+				{
+					"origin": {
+						"type": "stop",
+						"id": "8100002",
+						"name": "Salzburg Hbf",
+						"location": {
+							"type": "location",
+							"id": "8100002",
+							"latitude": 47.813057,
+							"longitude": 13.045856
+						},
+						"products": {
+							"nationalExpress": true,
+							"national": true,
+							"interregional": true,
+							"regional": true,
+							"suburban": true,
+							"bus": false,
+							"ferry": false,
+							"subway": false,
+							"tram": false,
+							"onCall": false
+						}
+					},
+					"destination": {
+						"type": "stop",
+						"id": "8000261",
+						"name": "München Hbf",
+						"location": {
+							"type": "location",
+							"id": "8000261",
+							"latitude": 48.140229,
+							"longitude": 11.558339
+						},
+						"products": {
+							"nationalExpress": true,
+							"national": true,
+							"interregional": true,
+							"regional": true,
+							"suburban": true,
+							"bus": false,
+							"ferry": false,
+							"subway": false,
+							"tram": false,
+							"onCall": false
+						}
+					},
+					"departure": "2025-06-13T13:00:00+02:00",
+					"plannedDeparture": "2025-06-13T13:00:00+02:00",
+					"departureDelay": 0,
+					"arrival": "2025-06-13T14:32:00+02:00",
+					"plannedArrival": "2025-06-13T14:32:00+02:00",
+					"arrivalDelay": 0,
+					"reachable": true,
+					"tripId": "2|#VN#1#ST#1749723624#PI#0#ZI#568106#TA#0#DA#130625#1S#5500003#1T#740#LS#8000261#LT#1432#PU#81#RT#1#CA#RJX#ZE#60#ZB#RJX 60  #PC#0#FR#5500003#FT#740#TO#8000261#TT#1432#",
+					"line": {
+						"type": "line",
+						"id": "rjx-60",
+						"fahrtNr": "60",
+						"name": "RJX 60",
+						"public": true,
+						"adminCode": "81____",
+						"productName": "RJX",
+						"mode": "train",
+						"product": "nationalExpress",
+						"operator": {
+							"type": "operator",
+							"id": "nahreisezug",
+							"name": "Nahreisezug"
+						}
+					},
+					"direction": "München Hbf",
+					"currentLocation": {
+						"type": "location",
+						"latitude": 47.451547,
+						"longitude": 18.931669
+					},
+					"arrivalPlatform": "11",
+					"plannedArrivalPlatform": "11",
+					"arrivalPrognosisType": "prognosed",
+					"departurePlatform": "3A-C",
+					"plannedDeparturePlatform": "3A-C",
+					"departurePrognosisType": "prognosed",
+					"remarks": [
+						{
+							"type": "hint",
+							"code": "RO",
+							"text": "space for wheelchairs"
+						},
+						{
+							"type": "hint",
+							"code": "OA",
+							"text": "Wheelchair space - For advance notification, call +43 5 1717"
+						},
+						{
+							"type": "hint",
+							"code": "EF",
+							"text": "Vehicle-mounted access ramp for wheelchair users"
+						},
+						{
+							"type": "hint",
+							"code": "OC",
+							"text": "WC accessible for wheelchair"
+						},
+						{
+							"type": "hint",
+							"code": "FR",
+							"text": "Bicycles conveyed - subject to reservation"
+						},
+						{
+							"type": "hint",
+							"code": "FK",
+							"text": "Number of bicycles conveyed limited"
+						},
+						{
+							"type": "hint",
+							"code": "UA",
+							"text": "business-compartment"
+						},
+						{
+							"type": "hint",
+							"code": "BR",
+							"text": "Bordrestaurant"
+						},
+						{
+							"type": "hint",
+							"code": "HD",
+							"text": "Quiet Zone"
+						},
+						{
+							"type": "hint",
+							"code": "KN",
+							"text": "Family Zone"
+						},
+						{
+							"type": "hint",
+							"code": "WV",
+							"text": "Wifi available"
+						},
+						{
+							"type": "hint",
+							"code": "ZN",
+							"text": "railjet express"
+						},
+						{
+							"id": "762171",
+							"type": "warning",
+							"summary": "ATTENTION: Peak travel day/journey is only guaranteed with a seat reservation",
+							"text": "RJX 60: We are expecting a very high number of passengers on this train. The journey can therefore only be guaranteed with a seat reservation.",
+							"icon": {
+								"type": "HIM4",
+								"title": null
+							},
+							"priority": 100,
+							"products": {
+								"nationalExpress": true,
+								"national": false,
+								"interregional": false,
+								"regional": false,
+								"suburban": false,
+								"bus": false,
+								"ferry": false,
+								"subway": false,
+								"tram": false,
+								"onCall": false
+							},
+							"company": "KI HIM BAU",
+							"categories": [
+								4
+							],
+							"edges": [
+								{
+									"icoCrd": {
+										"x": 15112781,
+										"y": 47401859
+									},
+									"icon": null,
+									"fromLocation": null,
+									"toLocation": null
+								}
+							],
+							"validFrom": "2024-12-16T00:00:00+01:00",
+							"validUntil": "2025-12-12T23:59:00+01:00",
+							"modified": "2025-01-13T10:35:19+01:00"
+						}
+					]
+				}
+			],
+			"refreshToken": "¶HKI¶T$A=1@O=Klagenfurt Hbf@L=8100085@a=128@$A=1@O=Spittal/Drau-Millstätter See Bahnhof@L=8100092@a=128@$202506130916$202506131012$IC 775  $$1$$$$$$§W$A=1@O=Spittal/Drau-Millstätter See Bahnhof@L=8100092@a=128@$A=1@O=Spittal/Drau-Millstätter See Bahnhof (Busbahnhof)@L=296131@a=128@$202506131012$202506131015$$$1$$$$$$§T$A=1@O=Spittal/Drau-Millstätter See Bahnhof (Busbahnhof)@L=296131@a=128@$A=1@O=Bischofshofen Bahnhof (Vorplatz)@L=594451@a=128@$202506131020$202506131140$BusSV220$$1$$$$$$§W$A=1@O=Bischofshofen Bahnhof (Vorplatz)@L=594451@a=128@$A=1@O=Bischofshofen Bahnhof@L=8100042@a=128@$202506131140$202506131145$$$1$$$$$$§T$A=1@O=Bischofshofen Bahnhof@L=8100042@a=128@$A=1@O=Salzburg Hbf@L=8100002@a=128@$202506131157$202506131244$RJ 697  $$1$$$$$$§T$A=1@O=Salzburg Hbf@L=8100002@a=128@$A=1@O=München Hbf@L=8000261@a=128@$202506131300$202506131432$RJX 60  $$1$$$$$$¶KRCC¶#VE#1#MRTF#",
+			"cycle": {
+				"min": 3600
+			}
+		},
+		{
+			"type": "journey",
+			"legs": [
+				{
+					"origin": {
+						"type": "stop",
+						"id": "8100085",
+						"name": "Klagenfurt Hbf",
+						"location": {
+							"type": "location",
+							"id": "8100085",
+							"latitude": 46.615604,
+							"longitude": 14.313578
+						},
+						"products": {
+							"nationalExpress": true,
+							"national": true,
+							"interregional": true,
+							"regional": true,
+							"suburban": true,
+							"bus": false,
+							"ferry": false,
+							"subway": false,
+							"tram": false,
+							"onCall": false
+						}
+					},
+					"destination": {
+						"type": "stop",
+						"id": "8100092",
+						"name": "Spittal/Drau-Millstätter See Bahnhof",
+						"location": {
+							"type": "location",
+							"id": "8100092",
+							"latitude": 46.79573,
+							"longitude": 13.487541
+						},
+						"products": {
+							"nationalExpress": true,
+							"national": true,
+							"interregional": true,
+							"regional": true,
+							"suburban": true,
+							"bus": false,
+							"ferry": false,
+							"subway": false,
+							"tram": false,
+							"onCall": false
+						}
+					},
+					"departure": "2025-06-13T09:16:00+02:00",
+					"plannedDeparture": "2025-06-13T09:16:00+02:00",
+					"departureDelay": 0,
+					"arrival": "2025-06-13T10:12:00+02:00",
+					"plannedArrival": "2025-06-13T10:12:00+02:00",
+					"arrivalDelay": 0,
+					"reachable": true,
+					"tripId": "2|#VN#1#ST#1749723624#PI#0#ZI#580927#TA#2#DA#130625#1S#8100085#1T#916#LS#8100093#LT#1042#PU#81#RT#1#CA#IC#ZE#775#ZB#IC 775  #PC#2#FR#8100085#FT#916#TO#8100093#TT#1042#",
+					"line": {
+						"type": "line",
+						"id": "ic-775",
+						"fahrtNr": "775",
+						"name": "IC 775",
+						"public": true,
+						"adminCode": "81____",
+						"productName": "IC",
+						"mode": "train",
+						"product": "national",
+						"operator": {
+							"type": "operator",
+							"id": "nahreisezug",
+							"name": "Nahreisezug"
+						}
+					},
+					"direction": "Mallnitz-Obervellach Bahnhof",
+					"arrivalPlatform": "3",
+					"plannedArrivalPlatform": "3",
+					"arrivalPrognosisType": "prognosed",
+					"departurePlatform": "3",
+					"plannedDeparturePlatform": "3",
+					"departurePrognosisType": "prognosed",
+					"remarks": [
+						{
+							"type": "hint",
+							"code": "RO",
+							"text": "space for wheelchairs"
+						},
+						{
+							"type": "hint",
+							"code": "OA",
+							"text": "Wheelchair space - For advance notification, call +43 5 1717"
+						},
+						{
+							"type": "hint",
+							"code": "FR",
+							"text": "Bicycles conveyed - subject to reservation"
+						},
+						{
+							"type": "hint",
+							"code": "FK",
+							"text": "Number of bicycles conveyed limited"
+						},
+						{
+							"type": "hint",
+							"code": "BO",
+							"text": "mobile on-board service (snacks and beverages)"
+						}
+					]
+				},
+				{
+					"origin": {
+						"type": "stop",
+						"id": "8100092",
+						"name": "Spittal/Drau-Millstätter See Bahnhof",
+						"location": {
+							"type": "location",
+							"id": "8100092",
+							"latitude": 46.79573,
+							"longitude": 13.487541
+						},
+						"products": {
+							"nationalExpress": true,
+							"national": true,
+							"interregional": true,
+							"regional": true,
+							"suburban": true,
+							"bus": false,
+							"ferry": false,
+							"subway": false,
+							"tram": false,
+							"onCall": false
+						}
+					},
+					"destination": {
+						"type": "stop",
+						"id": "296131",
+						"name": "Spittal/Drau-Millstätter See Bahnhof (Busbahnhof)",
+						"location": {
+							"type": "location",
+							"id": "296131",
+							"latitude": 46.795119,
+							"longitude": 13.488746
+						},
+						"products": {
+							"nationalExpress": false,
+							"national": true,
+							"interregional": false,
+							"regional": false,
+							"suburban": false,
+							"bus": true,
+							"ferry": false,
+							"subway": false,
+							"tram": false,
+							"onCall": false
+						}
+					},
+					"departure": "2025-06-13T10:12:00+02:00",
+					"plannedDeparture": "2025-06-13T10:12:00+02:00",
+					"departureDelay": null,
+					"arrival": "2025-06-13T10:15:00+02:00",
+					"plannedArrival": "2025-06-13T10:15:00+02:00",
+					"arrivalDelay": null,
+					"public": true,
+					"walking": true,
+					"distance": 114
+				},
+				{
+					"origin": {
+						"type": "stop",
+						"id": "296131",
+						"name": "Spittal/Drau-Millstätter See Bahnhof (Busbahnhof)",
+						"location": {
+							"type": "location",
+							"id": "296131",
+							"latitude": 46.795119,
+							"longitude": 13.488746
+						},
+						"products": {
+							"nationalExpress": false,
+							"national": true,
+							"interregional": false,
+							"regional": false,
+							"suburban": false,
+							"bus": true,
+							"ferry": false,
+							"subway": false,
+							"tram": false,
+							"onCall": false
+						}
+					},
+					"destination": {
+						"type": "stop",
+						"id": "594451",
+						"name": "Bischofshofen Bahnhof (Vorplatz)",
+						"location": {
+							"type": "location",
+							"id": "594451",
+							"latitude": 47.41702,
+							"longitude": 13.219456
+						},
+						"products": {
+							"nationalExpress": false,
+							"national": true,
+							"interregional": false,
+							"regional": false,
+							"suburban": false,
+							"bus": true,
+							"ferry": false,
+							"subway": false,
+							"tram": false,
+							"onCall": true
+						}
+					},
+					"departure": "2025-06-13T11:20:00+02:00",
+					"plannedDeparture": "2025-06-13T11:20:00+02:00",
+					"departureDelay": null,
+					"arrival": "2025-06-13T12:40:00+02:00",
+					"plannedArrival": "2025-06-13T12:40:00+02:00",
+					"arrivalDelay": null,
+					"reachable": true,
+					"tripId": "2|#VN#1#ST#1749723624#PI#0#ZI#581996#TA#6#DA#130625#1S#296131#1T#1120#LS#594451#LT#1240#PU#81#RT#1#CA#Bsv#ZE#SV220#ZB#BusSV220#PC#1#FR#296131#FT#1120#TO#594451#TT#1240#",
+					"line": {
+						"type": "line",
+						"id": "bussv220",
+						"fahrtNr": "1126",
+						"name": "BusSV220",
+						"public": true,
+						"adminCode": "19POSD",
+						"productName": "Bus",
+						"mode": "train",
+						"product": "national",
+						"operator": {
+							"type": "operator",
+							"id": "osterreichische-postbus-aktiengesellschaft",
+							"name": "Österreichische Postbus Aktiengesellschaft"
+						}
+					},
+					"direction": "Bischofshofen Bahnhof (Vorplatz)",
+					"arrivalPlatform": null,
+					"plannedArrivalPlatform": null,
+					"arrivalPrognosisType": "prognosed",
+					"departurePlatform": "1",
+					"plannedDeparturePlatform": "1",
+					"departurePrognosisType": "prognosed",
+					"remarks": [
+						{
+							"type": "hint",
+							"code": "iD",
+							"text": "Hinweis: Ticket bitte vor Fahrtantritt online bzw. mobil, beim Ticketautomaten oder -schalter erwerben"
+						},
+						{
+							"type": "hint",
+							"code": "RO",
+							"text": "space for wheelchairs"
+						},
+						{
+							"type": "hint",
+							"code": "FK",
+							"text": "Number of bicycles conveyed limited"
+						},
+						{
+							"type": "hint",
+							"code": "K2",
+							"text": "2nd class only"
+						},
+						{
+							"type": "hint",
+							"code": "k9",
+							"text": "Hinweis: Ticketverkauf im Bus nur eingeschränkt möglich"
+						},
+						{
+							"type": "hint",
+							"code": "SV",
+							"text": "Train replacement bus"
+						}
+					],
+					"cycle": {
+						"min": 3600,
+						"max": 3600,
+						"nr": 3
+					}
+				},
+				{
+					"origin": {
+						"type": "stop",
+						"id": "594451",
+						"name": "Bischofshofen Bahnhof (Vorplatz)",
+						"location": {
+							"type": "location",
+							"id": "594451",
+							"latitude": 47.41702,
+							"longitude": 13.219456
+						},
+						"products": {
+							"nationalExpress": false,
+							"national": true,
+							"interregional": false,
+							"regional": false,
+							"suburban": false,
+							"bus": true,
+							"ferry": false,
+							"subway": false,
+							"tram": false,
+							"onCall": true
+						}
+					},
+					"destination": {
+						"type": "stop",
+						"id": "8100042",
+						"name": "Bischofshofen Bahnhof",
+						"location": {
+							"type": "location",
+							"id": "8100042",
+							"latitude": 47.417874,
+							"longitude": 13.220058
+						},
+						"products": {
+							"nationalExpress": true,
+							"national": true,
+							"interregional": true,
+							"regional": true,
+							"suburban": true,
+							"bus": false,
+							"ferry": false,
+							"subway": false,
+							"tram": false,
+							"onCall": false
+						}
+					},
+					"departure": "2025-06-13T12:40:00+02:00",
+					"plannedDeparture": "2025-06-13T12:40:00+02:00",
+					"departureDelay": null,
+					"arrival": "2025-06-13T12:45:00+02:00",
+					"plannedArrival": "2025-06-13T12:45:00+02:00",
+					"arrivalDelay": null,
+					"public": true,
+					"walking": true,
+					"distance": 105
+				},
+				{
+					"origin": {
+						"type": "stop",
+						"id": "8100042",
+						"name": "Bischofshofen Bahnhof",
+						"location": {
+							"type": "location",
+							"id": "8100042",
+							"latitude": 47.417874,
+							"longitude": 13.220058
+						},
+						"products": {
+							"nationalExpress": true,
+							"national": true,
+							"interregional": true,
+							"regional": true,
+							"suburban": true,
+							"bus": false,
+							"ferry": false,
+							"subway": false,
+							"tram": false,
+							"onCall": false
+						}
+					},
+					"destination": {
+						"type": "stop",
+						"id": "8000261",
+						"name": "München Hbf",
+						"location": {
+							"type": "location",
+							"id": "8000261",
+							"latitude": 48.140229,
+							"longitude": 11.558339
+						},
+						"products": {
+							"nationalExpress": true,
+							"national": true,
+							"interregional": true,
+							"regional": true,
+							"suburban": true,
+							"bus": false,
+							"ferry": false,
+							"subway": false,
+							"tram": false,
+							"onCall": false
+						}
+					},
+					"departure": "2025-06-13T13:08:00+02:00",
+					"plannedDeparture": "2025-06-13T13:08:00+02:00",
+					"departureDelay": null,
+					"arrival": "2025-06-13T15:41:00+02:00",
+					"plannedArrival": "2025-06-13T15:41:00+02:00",
+					"arrivalDelay": null,
+					"reachable": true,
+					"tripId": "2|#VN#1#ST#1749723624#PI#0#ZI#555525#TA#0#DA#130625#1S#8100044#1T#1252#LS#8000105#LT#1940#PU#81#RT#1#CA#EC#ZE#112#ZB#EC 112  #PC#2#FR#8100044#FT#1252#TO#8000105#TT#1940#",
+					"line": {
+						"type": "line",
+						"id": "ec-112",
+						"fahrtNr": "112",
+						"name": "EC 112",
+						"public": true,
+						"adminCode": "81____",
+						"productName": "EC",
+						"mode": "train",
+						"product": "national",
+						"operator": {
+							"type": "operator",
+							"id": "nahreisezug",
+							"name": "Nahreisezug"
+						}
+					},
+					"direction": "Frankfurt(Main)Hbf",
+					"arrivalPlatform": "13",
+					"plannedArrivalPlatform": "13",
+					"arrivalPrognosisType": "prognosed",
+					"departurePlatform": "3",
+					"plannedDeparturePlatform": "3",
+					"departurePrognosisType": "prognosed",
+					"remarks": [
+						{
+							"type": "hint",
+							"code": "RO",
+							"text": "space for wheelchairs"
+						},
+						{
+							"type": "hint",
+							"code": "OA",
+							"text": "Wheelchair space - For advance notification, call +43 5 1717"
+						},
+						{
+							"type": "hint",
+							"code": "OC",
+							"text": "WC accessible for wheelchair"
+						},
+						{
+							"type": "hint",
+							"code": "FR",
+							"text": "Bicycles conveyed - subject to reservation"
+						},
+						{
+							"type": "hint",
+							"code": "FK",
+							"text": "Number of bicycles conveyed limited"
+						},
+						{
+							"type": "hint",
+							"code": "AD",
+							"text": "ladies' compartment"
+						},
+						{
+							"type": "hint",
+							"code": "BO",
+							"text": "mobile on-board service (snacks and beverages)"
+						},
+						{
+							"type": "hint",
+							"code": "SA",
+							"text": "compartment for nursing mothers / bottle-feeding"
+						},
+						{
+							"type": "hint",
+							"code": "ZN",
+							"text": "Blauer Enzian"
+						},
+						{
+							"id": "762501",
+							"type": "warning",
+							"summary": "ATTENTION: Peak travel day/journey is only guaranteed with a seat reservation",
+							"text": "EC 112: We are expecting a very high number of passengers on this train. The journey can therefore only be guaranteed with a seat reservation.",
+							"icon": {
+								"type": "HIM4",
+								"title": null
+							},
+							"priority": 100,
+							"products": {
+								"nationalExpress": false,
+								"national": true,
+								"interregional": false,
+								"regional": false,
+								"suburban": false,
+								"bus": false,
+								"ferry": false,
+								"subway": false,
+								"tram": false,
+								"onCall": false
+							},
+							"company": "KI HIM BAU",
+							"categories": [
+								4
+							],
+							"edges": [
+								{
+									"icoCrd": {
+										"x": 15319942,
+										"y": 47820159
+									},
+									"icon": null,
+									"fromLocation": null,
+									"toLocation": null
+								}
+							],
+							"validFrom": "2025-03-07T00:00:00+01:00",
+							"validUntil": "2025-07-31T23:59:00+02:00",
+							"modified": "2024-12-06T14:10:19+01:00"
+						},
+						{
+							"id": "782348",
+							"type": "warning",
+							"summary": "Update 1 (18.03.2025 08:40) Border control at the German corner",
+							"text": "The German Federal Police carry out entry checks at the German corner. Please have your passport or identity card ready. This may result in additional delays.\n",
+							"icon": {
+								"type": "HIM4",
+								"title": null
+							},
+							"priority": 100,
+							"products": {
+								"nationalExpress": true,
+								"national": true,
+								"interregional": false,
+								"regional": false,
+								"suburban": false,
+								"bus": false,
+								"ferry": false,
+								"subway": false,
+								"tram": false,
+								"onCall": false
+							},
+							"company": "VL KI HIM ADHOC",
+							"categories": [
+								4
+							],
+							"edges": [
+								{
+									"icoCrd": {
+										"x": 13045947,
+										"y": 47814254
+									},
+									"icon": null,
+									"fromLocation": null,
+									"toLocation": null
+								}
+							],
+							"validFrom": "2025-03-16T00:00:00+01:00",
+							"validUntil": "2025-09-15T23:59:00+02:00",
+							"modified": "2025-03-18T08:40:34+01:00"
+						}
+					]
+				}
+			],
+			"refreshToken": "¶HKI¶T$A=1@O=Klagenfurt Hbf@L=8100085@a=128@$A=1@O=Spittal/Drau-Millstätter See Bahnhof@L=8100092@a=128@$202506130916$202506131012$IC 775  $$1$$$$$$§W$A=1@O=Spittal/Drau-Millstätter See Bahnhof@L=8100092@a=128@$A=1@O=Spittal/Drau-Millstätter See Bahnhof (Busbahnhof)@L=296131@a=128@$202506131012$202506131015$$$1$$$$$$§T$A=1@O=Spittal/Drau-Millstätter See Bahnhof (Busbahnhof)@L=296131@a=128@$A=1@O=Bischofshofen Bahnhof (Vorplatz)@L=594451@a=128@$202506131120$202506131240$BusSV220$$1$$$$$$§W$A=1@O=Bischofshofen Bahnhof (Vorplatz)@L=594451@a=128@$A=1@O=Bischofshofen Bahnhof@L=8100042@a=128@$202506131240$202506131245$$$1$$$$$$§T$A=1@O=Bischofshofen Bahnhof@L=8100042@a=128@$A=1@O=München Hbf@L=8000261@a=128@$202506131308$202506131541$EC 112  $$1$$$$$$¶KRCC¶#VE#1#MRTF#",
+			"cycle": {
+				"min": 3600
+			},
+			"remarks": []
+		}
+	],
+	"realtimeDataUpdatedAt": 1749794320
+}

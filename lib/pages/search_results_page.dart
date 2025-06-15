@@ -7,12 +7,18 @@ class SearchResultsPage extends StatefulWidget {
   final String fromId;
   final String toId;
   final DateTime? departure;
+  final List<Map<String, dynamic>> journeys;
+  final List<String>? via;
+  final List<int?>? viaChangeMins;
 
   const SearchResultsPage({
     super.key,
     required this.fromId,
     required this.toId,
     this.departure,
+    required this.journeys,
+    this.via,
+    this.viaChangeMins,
   });
 
   @override
@@ -20,23 +26,13 @@ class SearchResultsPage extends StatefulWidget {
 }
 
 class _SearchResultsPageState extends State<SearchResultsPage> {
-  List<Map<String, dynamic>> _journeys = [];
-  bool _loading = true;
+  late List<Map<String, dynamic>> _journeys;
   bool _loadingMore = false;
 
   @override
   void initState() {
     super.initState();
-    _fetchInitialJourneys();
-  }
-
-  Future<void> _fetchInitialJourneys() async {
-    setState(() => _loading = true);
-    final journeys = await OebbApiService.searchJourneys(widget.fromId, widget.toId, departure: widget.departure);
-    setState(() {
-      _journeys = journeys;
-      _loading = false;
-    });
+    _journeys = List<Map<String, dynamic>>.from(widget.journeys); // Use handed-over journeys
   }
 
   Future<void> _fetchLaterJourneys() async {
@@ -61,7 +57,13 @@ class _SearchResultsPageState extends State<SearchResultsPage> {
       final firstDeparture = DateTime.tryParse(firstDepartureStr)?.toLocal();
       if (firstDeparture != null) {
         final nextDeparture = firstDeparture.add(const Duration(minutes: 1));
-        final moreJourneys = await OebbApiService.searchJourneys(widget.fromId, widget.toId, departure: nextDeparture);
+        final moreJourneys = await OebbApiService.searchJourneys(
+          widget.fromId,
+          widget.toId,
+          departure: nextDeparture,
+          via: widget.via,
+          viaChangeMins: widget.viaChangeMins,
+        );
         // Avoid duplicates
         final more = moreJourneys.where((j) =>
           !_journeys.any((orig) => orig['refreshToken'] == j['refreshToken']));
@@ -75,11 +77,6 @@ class _SearchResultsPageState extends State<SearchResultsPage> {
 
   @override
   Widget build(BuildContext context) {
-    if (_loading) {
-      return const Scaffold(
-        body: Center(child: CircularProgressIndicator()),
-      );
-    }
     if (_journeys.isEmpty) {
       return const Scaffold(
         body: Center(child: Text('No journeys found.')),

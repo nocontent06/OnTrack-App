@@ -1,19 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:ontrack/providers/coin_provider.dart';
+import 'package:ontrack/providers/journey_search_provider.dart';
+import 'package:ontrack/providers/trips_provider.dart';
 import 'package:ontrack/providers/theme_provider.dart';
 import 'package:ontrack/providers/profile_provider.dart';
 import 'package:ontrack/pages/journey_planner_page.dart';
-import 'package:ontrack/pages/trip_suggestions_page.dart';
+import 'package:ontrack/pages/trip_page.dart';
 import 'package:ontrack/pages/profile_page.dart';
 
 void main() {
   runApp(
     MultiProvider(
       providers: [
-        ChangeNotifierProvider(create: (_) => CoinProvider()),
+        ChangeNotifierProvider(create: (_) => TripsProvider()),
         ChangeNotifierProvider(create: (_) => ThemeProvider()),
         ChangeNotifierProvider(create: (_) => ProfileProvider()),
+        ChangeNotifierProvider(create: (_) => JourneySearchProvider()),
       ],
       child: const OnTrackApp(),
     ),
@@ -52,7 +54,7 @@ class _MainNavigationState extends State<MainNavigation> {
 
   final List<Widget> _pages = [
     const JourneyPlannerPage(),
-    const TripSuggestionsPage(),
+    const TripPage(),
     const ProfilePage(),
   ];
 
